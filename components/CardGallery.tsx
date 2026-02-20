@@ -9,9 +9,10 @@ interface Props {
   onBookClick: (book: Book) => void;
   favoriteIds: Set<number>;
   onToggleFavorite: (id: number) => void;
+  onOpenCollection?: () => void;
 }
 
-export function CardGallery({ books, onBookClick, favoriteIds, onToggleFavorite }: Props) {
+export function CardGallery({ books, onBookClick, favoriteIds, onToggleFavorite, onOpenCollection }: Props) {
   if (books.length === 0) {
     return (
       <motion.div
@@ -40,6 +41,7 @@ export function CardGallery({ books, onBookClick, favoriteIds, onToggleFavorite 
             onClick={onBookClick}
             isFavorite={favoriteIds.has(book.id)}
             onToggleFavorite={onToggleFavorite}
+            onOpenCollection={onOpenCollection}
           />
         ))}
       </AnimatePresence>

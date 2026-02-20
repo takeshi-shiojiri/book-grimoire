@@ -1,12 +1,13 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import { books } from '@/lib/books';
 import { HeroSection } from '@/components/HeroSection';
 import { FilterBar, type ViewMode } from '@/components/FilterBar';
 import { CardGallery } from '@/components/CardGallery';
 import { BookListTable } from '@/components/BookListTable';
 import { BookDetailModal } from '@/components/BookDetailModal';
+import { FavoritesCollectionModal } from '@/components/FavoritesCollectionModal';
 import { useFilter } from '@/hooks/useFilter';
 import { useFavorites } from '@/hooks/useFavorites';
 import type { Book } from '@/lib/types';
@@ -16,6 +17,13 @@ export default function Home() {
   const { favoriteIds, toggleFavorite, isFavorite, favoriteCount, isComplete } = useFavorites(books.length);
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
   const [viewMode, setViewMode] = useState<ViewMode>('card');
+  const [collectionOpen, setCollectionOpen] = useState(false);
+
+  // お気に入り本リスト（登録順を保つためにbooksの順で抽出）
+  const favoriteBooks = useMemo(
+    () => books.filter((b) => favoriteIds.has(b.id)),
+    [favoriteIds]
+  );
 
   const handleBookClick = useCallback((book: Book) => {
     setSelectedBook(book);
@@ -25,6 +33,9 @@ export default function Home() {
     setSelectedBook(null);
   }, []);
 
+  const openCollection = useCallback(() => setCollectionOpen(true), []);
+  const closeCollection = useCallback(() => setCollectionOpen(false), []);
+
   return (
     <div className="min-h-screen" style={{ background: 'var(--color-bg-primary)' }}>
       {/* ヒーローセクション */}
@@ -32,6 +43,7 @@ export default function Home() {
         totalCount={books.length}
         favoriteCount={favoriteCount}
         isComplete={isComplete}
+        onOpenCollection={openCollection}
       />
 
       {/* フィルターバー */}
@@ -55,6 +67,7 @@ export default function Home() {
             onBookClick={handleBookClick}
             favoriteIds={favoriteIds}
             onToggleFavorite={toggleFavorite}
+            onOpenCollection={openCollection}
           />
         ) : (
           <BookListTable
@@ -78,6 +91,14 @@ export default function Home() {
         onClose={handleModalClose}
         isFavorite={selectedBook ? isFavorite(selectedBook.id) : false}
         onToggleFavorite={toggleFavorite}
+      />
+
+      {/* お気に入りコレクションモーダル */}
+      <FavoritesCollectionModal
+        isOpen={collectionOpen}
+        onClose={closeCollection}
+        favoriteBooks={favoriteBooks}
+        onBookClick={handleBookClick}
       />
     </div>
   );

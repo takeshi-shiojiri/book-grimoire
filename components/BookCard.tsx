@@ -13,9 +13,10 @@ interface Props {
   onClick: (book: Book) => void;
   isFavorite?: boolean;
   onToggleFavorite?: (id: number) => void;
+  onOpenCollection?: () => void;
 }
 
-export function BookCard({ book, onClick, isFavorite, onToggleFavorite }: Props) {
+export function BookCard({ book, onClick, isFavorite, onToggleFavorite, onOpenCollection }: Props) {
   const config = RARITY_CONFIG[book.rarity];
 
   return (
@@ -44,6 +45,8 @@ export function BookCard({ book, onClick, isFavorite, onToggleFavorite }: Props)
         onClick={(e) => {
           e.stopPropagation();
           onToggleFavorite?.(book.id);
+          // お気に入り追加時にコレクションを開く（外す時は開かない）
+          if (!isFavorite) onOpenCollection?.();
         }}
         aria-label={isFavorite ? 'お気に入りを外す' : 'お気に入りに追加'}
       >

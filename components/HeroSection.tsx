@@ -16,9 +16,10 @@ interface Props {
   totalCount: number;
   favoriteCount: number;
   isComplete: boolean;
+  onOpenCollection: () => void;
 }
 
-export function HeroSection({ totalCount, favoriteCount, isComplete }: Props) {
+export function HeroSection({ totalCount, favoriteCount, isComplete, onOpenCollection }: Props) {
   const [adviceIndex, setAdviceIndex] = useState(0);
 
   // ランダムで1つ選ぶ（初回マウント時のみ）
@@ -92,6 +93,7 @@ export function HeroSection({ totalCount, favoriteCount, isComplete }: Props) {
             favoriteCount={favoriteCount}
             total={totalCount}
             isComplete={isComplete}
+            onOpen={onOpenCollection}
           />
         </motion.div>
 
