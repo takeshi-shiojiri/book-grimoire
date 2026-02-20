@@ -1,6 +1,7 @@
 export type Rarity = 'SSR' | 'SR+' | 'SR' | 'R' | 'N' | 'C';
 
-export type Attribute = 'fire' | 'ice' | 'thunder' | 'dark' | 'light' | 'wind';
+// ビジネス書 / 自己啓発 / 漫画 の3分類
+export type Attribute = 'business' | 'selfhelp' | 'manga';
 
 export interface Book {
   id: number;

@@ -2,6 +2,7 @@
 
 import { motion } from 'motion/react';
 import Image from 'next/image';
+import { Heart } from 'lucide-react';
 import { RARITY_CONFIG } from '@/lib/constants';
 import { RarityBadge } from './RarityBadge';
 import { AttributeIcon } from './AttributeIcon';
@@ -10,10 +11,11 @@ import type { Book } from '@/lib/types';
 interface Props {
   book: Book;
   onClick: (book: Book) => void;
-  isViewed?: boolean;
+  isFavorite?: boolean;
+  onToggleFavorite?: (id: number) => void;
 }
 
-export function BookCard({ book, onClick, isViewed }: Props) {
+export function BookCard({ book, onClick, isFavorite, onToggleFavorite }: Props) {
   const config = RARITY_CONFIG[book.rarity];
 
   return (
@@ -32,10 +34,24 @@ export function BookCard({ book, onClick, isViewed }: Props) {
       }}
       onClick={() => onClick(book)}
     >
-      {/* 既読インジケーター */}
-      {isViewed && (
-        <div className="absolute top-2 right-2 z-10 w-2 h-2 rounded-full bg-green-400 shadow-[0_0_6px_#22c55e]" />
-      )}
+      {/* お気に入りボタン（右上） */}
+      <button
+        className="absolute top-2 right-2 z-10 rounded-full p-1 transition-transform hover:scale-125 active:scale-95"
+        style={{
+          background: 'rgba(0,0,0,0.4)',
+          backdropFilter: 'blur(4px)',
+        }}
+        onClick={(e) => {
+          e.stopPropagation();
+          onToggleFavorite?.(book.id);
+        }}
+        aria-label={isFavorite ? 'お気に入りを外す' : 'お気に入りに追加'}
+      >
+        <Heart
+          size={14}
+          className={isFavorite ? 'fill-current text-pink-400' : 'text-white/50'}
+        />
+      </button>
 
       {/* カード上部: 書影 */}
       <div className="relative w-full" style={{ aspectRatio: '2/3' }}>
@@ -60,7 +76,7 @@ export function BookCard({ book, onClick, isViewed }: Props) {
           }}
         />
 
-        {/* レアリティバッジ（左上） */}
+        {/* レアリティバッジ（左上）: ★のみ */}
         <div className="absolute top-2 left-2">
           <RarityBadge rarity={book.rarity} size="sm" />
         </div>
@@ -76,9 +92,6 @@ export function BookCard({ book, onClick, isViewed }: Props) {
         </p>
         <div className="flex items-center justify-between pt-1">
           <AttributeIcon attribute={book.attribute} size={12} showLabel />
-          <span className="text-[10px]" style={{ color: config.borderColor }}>
-            {'★'.repeat(Math.min(book.rating, 7))}
-          </span>
         </div>
       </div>
     </motion.div>

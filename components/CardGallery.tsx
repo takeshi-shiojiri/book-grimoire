@@ -7,10 +7,11 @@ import type { Book } from '@/lib/types';
 interface Props {
   books: Book[];
   onBookClick: (book: Book) => void;
-  viewedIds: Set<number>;
+  favoriteIds: Set<number>;
+  onToggleFavorite: (id: number) => void;
 }
 
-export function CardGallery({ books, onBookClick, viewedIds }: Props) {
+export function CardGallery({ books, onBookClick, favoriteIds, onToggleFavorite }: Props) {
   if (books.length === 0) {
     return (
       <motion.div
@@ -37,7 +38,8 @@ export function CardGallery({ books, onBookClick, viewedIds }: Props) {
             key={book.id}
             book={book}
             onClick={onBookClick}
-            isViewed={viewedIds.has(book.id)}
+            isFavorite={favoriteIds.has(book.id)}
+            onToggleFavorite={onToggleFavorite}
           />
         ))}
       </AnimatePresence>

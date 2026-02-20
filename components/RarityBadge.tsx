@@ -17,17 +17,20 @@ export function RarityBadge({ rarity, size = 'sm' }: Props) {
     lg: 'text-sm px-3 py-1.5',
   }[size];
 
+  // ★の数: SSR=7, SR+=6, SR=5, R=4, N=3, C=1-2
+  const starCount = { SSR: 7, 'SR+': 6, SR: 5, R: 4, N: 3, C: 2 }[rarity];
+
   return (
     <span
-      className={`inline-flex items-center gap-0.5 rounded font-bold tracking-wider gaming-font ${sizeClass}`}
+      className={`inline-flex items-center gap-0.5 rounded font-bold ${sizeClass}`}
       style={{
         background: config.badgeBg,
         color: config.badgeText,
         boxShadow: `0 0 8px ${config.glowColor}`,
+        letterSpacing: '-0.02em',
       }}
     >
-      {config.rank}
-      <span className="font-normal opacity-75 text-[8px] ml-0.5">{config.label}</span>
+      {'★'.repeat(starCount)}
     </span>
   );
 }

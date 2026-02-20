@@ -3,7 +3,7 @@
 import { useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import Image from 'next/image';
-import { X, ShoppingCart, Star } from 'lucide-react';
+import { X, ShoppingCart, Star, Heart } from 'lucide-react';
 import { RARITY_CONFIG } from '@/lib/constants';
 import { RarityBadge } from './RarityBadge';
 import { AttributeIcon } from './AttributeIcon';
@@ -12,9 +12,11 @@ import type { Book } from '@/lib/types';
 interface Props {
   book: Book | null;
   onClose: () => void;
+  isFavorite?: boolean;
+  onToggleFavorite?: (id: number) => void;
 }
 
-export function BookDetailModal({ book, onClose }: Props) {
+export function BookDetailModal({ book, onClose, isFavorite, onToggleFavorite }: Props) {
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
     if (e.key === 'Escape') onClose();
   }, [onClose]);
@@ -62,14 +64,29 @@ export function BookDetailModal({ book, onClose }: Props) {
                 boxShadow: `0 0 60px ${RARITY_CONFIG[book.rarity].glowColor}, 0 25px 50px rgba(0,0,0,0.8)`,
               }}
             >
-              {/* 閉じるボタン */}
-              <button
-                onClick={onClose}
-                className="absolute top-4 right-4 z-10 rounded-full p-1.5 text-white/60 hover:text-white hover:bg-white/10 transition-colors"
-                aria-label="閉じる"
-              >
-                <X size={20} />
-              </button>
+              {/* ヘッダーボタン群 */}
+              <div className="absolute top-4 right-4 z-10 flex items-center gap-2">
+                {/* お気に入りボタン */}
+                <button
+                  onClick={() => book && onToggleFavorite?.(book.id)}
+                  className="rounded-full p-1.5 transition-all hover:scale-110 active:scale-95"
+                  style={{ background: 'rgba(0,0,0,0.4)', backdropFilter: 'blur(4px)' }}
+                  aria-label={isFavorite ? 'お気に入りを外す' : 'お気に入りに追加'}
+                >
+                  <Heart
+                    size={18}
+                    className={isFavorite ? 'fill-current text-pink-400' : 'text-white/50'}
+                  />
+                </button>
+                {/* 閉じるボタン */}
+                <button
+                  onClick={onClose}
+                  className="rounded-full p-1.5 text-white/60 hover:text-white hover:bg-white/10 transition-colors"
+                  aria-label="閉じる"
+                >
+                  <X size={20} />
+                </button>
+              </div>
 
               <div className="flex flex-col sm:flex-row">
                 {/* 左: 書影 */}

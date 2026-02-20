@@ -1,23 +1,26 @@
 'use client';
 
 import { motion, AnimatePresence } from 'motion/react';
-import { Trophy } from 'lucide-react';
+import { Heart, Trophy } from 'lucide-react';
 
 interface Props {
-  viewed: number;
+  favoriteCount: number;
   total: number;
   isComplete: boolean;
 }
 
-export function CollectionProgress({ viewed, total, isComplete }: Props) {
-  const pct = Math.round((viewed / total) * 100);
+export function CollectionProgress({ favoriteCount, total, isComplete }: Props) {
+  const pct = total > 0 ? Math.round((favoriteCount / total) * 100) : 0;
 
   return (
     <div className="w-full max-w-md mx-auto">
       <div className="flex items-center justify-between mb-1.5">
-        <span className="text-xs gaming-font text-purple-300">COLLECTION</span>
+        <span className="inline-flex items-center gap-1 text-xs gaming-font text-pink-400">
+          <Heart size={11} className="fill-current" />
+          FAVORITES
+        </span>
         <span className="text-xs" style={{ color: 'var(--color-text-muted)' }}>
-          {viewed} / {total} 冊発見済み
+          {favoriteCount} / {total} 冊
         </span>
       </div>
 
@@ -34,10 +37,10 @@ export function CollectionProgress({ viewed, total, isComplete }: Props) {
           style={{
             background: isComplete
               ? 'linear-gradient(90deg, #ffd700, #ff8c00, #ffd700)'
-              : 'linear-gradient(90deg, #7c3aed, #a855f7, #c084fc)',
+              : 'linear-gradient(90deg, #ec4899, #f43f5e, #fb7185)',
             boxShadow: isComplete
               ? '0 0 10px #ffd700'
-              : '0 0 8px rgba(168,85,247,0.6)',
+              : '0 0 8px rgba(236,72,153,0.6)',
           }}
         />
       </div>
@@ -53,7 +56,7 @@ export function CollectionProgress({ viewed, total, isComplete }: Props) {
           >
             <Trophy size={14} className="text-yellow-400" />
             <span className="text-xs gaming-font text-gradient-gold">
-              コンプリート！全ての冒険書を発見した！
+              全冊お気に入り登録完了！
             </span>
             <Trophy size={14} className="text-yellow-400" />
           </motion.div>

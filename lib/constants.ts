@@ -83,49 +83,28 @@ export const RARITY_CONFIG: Record<Rarity, RarityConfig> = {
 };
 
 export const ATTRIBUTE_CONFIG: Record<Attribute, AttributeConfig> = {
-  fire: {
-    name: '炎',
-    icon: 'Flame',
-    color: '#ef4444',
-    bgColor: 'rgba(239,68,68,0.15)',
-    borderColor: 'rgba(239,68,68,0.4)',
+  business: {
+    name: 'ビジネス',
+    icon: 'Briefcase',
+    color: '#3b82f6',
+    bgColor: 'rgba(59,130,246,0.15)',
+    borderColor: 'rgba(59,130,246,0.4)',
   },
-  ice: {
-    name: '氷',
-    icon: 'Snowflake',
-    color: '#06b6d4',
-    bgColor: 'rgba(6,182,212,0.15)',
-    borderColor: 'rgba(6,182,212,0.4)',
-  },
-  thunder: {
-    name: '雷',
-    icon: 'Zap',
-    color: '#eab308',
-    bgColor: 'rgba(234,179,8,0.15)',
-    borderColor: 'rgba(234,179,8,0.4)',
-  },
-  dark: {
-    name: '闇',
-    icon: 'Moon',
-    color: '#8b5cf6',
-    bgColor: 'rgba(139,92,246,0.15)',
-    borderColor: 'rgba(139,92,246,0.4)',
-  },
-  light: {
-    name: '光',
-    icon: 'Sun',
+  selfhelp: {
+    name: '自己啓発',
+    icon: 'Sparkles',
     color: '#f59e0b',
     bgColor: 'rgba(245,158,11,0.15)',
     borderColor: 'rgba(245,158,11,0.4)',
   },
-  wind: {
-    name: '風',
-    icon: 'Wind',
-    color: '#10b981',
-    bgColor: 'rgba(16,185,129,0.15)',
-    borderColor: 'rgba(16,185,129,0.4)',
+  manga: {
+    name: '漫画',
+    icon: 'BookMarked',
+    color: '#ec4899',
+    bgColor: 'rgba(236,72,153,0.15)',
+    borderColor: 'rgba(236,72,153,0.4)',
   },
 };
 
-export const ATTRIBUTES: Attribute[] = ['fire', 'ice', 'thunder', 'dark', 'light', 'wind'];
+export const ATTRIBUTES: Attribute[] = ['business', 'selfhelp', 'manga'];
 export const RARITIES: Rarity[] = ['SSR', 'SR+', 'SR', 'R', 'N', 'C'];

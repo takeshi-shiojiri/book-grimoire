@@ -1,12 +1,10 @@
 'use client';
 
-import {
-  Flame, Snowflake, Zap, Moon, Sun, Wind,
-} from 'lucide-react';
+import { Briefcase, Sparkles, BookMarked } from 'lucide-react';
 import { ATTRIBUTE_CONFIG } from '@/lib/constants';
 import type { Attribute } from '@/lib/types';
 
-const ICON_MAP = { Flame, Snowflake, Zap, Moon, Sun, Wind } as const;
+const ICON_MAP = { Briefcase, Sparkles, BookMarked } as const;
 
 interface Props {
   attribute: Attribute;

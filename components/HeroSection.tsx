@@ -1,17 +1,31 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { BookOpen, Sparkles } from 'lucide-react';
 import { ParticleBackground } from './ParticleBackground';
 import { CollectionProgress } from './CollectionProgress';
 
+const ADVICE_MESSAGES = [
+  '💡 1冊を完璧に読もうとしなくていい。気になった章だけ読むだけで、十分に価値がある。',
+  '🌱 本は読み切ることより、1つのヒントを持ち帰ることの方が大事。「刺さった一行」で十分。',
+  '☕ 全部メモしようとしなくていい。読んでいる途中に「なるほど」と感じた瞬間が、すでにあなたの武器になっている。',
+];
+
 interface Props {
   totalCount: number;
-  viewedCount: number;
+  favoriteCount: number;
   isComplete: boolean;
 }
 
-export function HeroSection({ totalCount, viewedCount, isComplete }: Props) {
+export function HeroSection({ totalCount, favoriteCount, isComplete }: Props) {
+  const [adviceIndex, setAdviceIndex] = useState(0);
+
+  // ランダムで1つ選ぶ（初回マウント時のみ）
+  useEffect(() => {
+    setAdviceIndex(Math.floor(Math.random() * ADVICE_MESSAGES.length));
+  }, []);
+
   return (
     <section
       className="relative overflow-hidden py-20 px-4 text-center"
@@ -68,40 +82,32 @@ export function HeroSection({ totalCount, viewedCount, isComplete }: Props) {
           カードを開いて、自分だけの武器を見つけよう。
         </motion.p>
 
-        {/* コレクション進捗 */}
+        {/* お気に入り進捗 */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
         >
           <CollectionProgress
-            viewed={viewedCount}
+            favoriteCount={favoriteCount}
             total={totalCount}
             isComplete={isComplete}
           />
         </motion.div>
 
-        {/* レアリティ凡例 */}
+        {/* 読書アドバイスメッセージ */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
-          className="flex items-center justify-center gap-3 flex-wrap text-[10px] gaming-font"
-          style={{ color: 'var(--color-text-muted)' }}
+          className="mx-auto max-w-sm rounded-xl px-4 py-3 text-xs text-left leading-relaxed"
+          style={{
+            background: 'rgba(168,85,247,0.08)',
+            border: '1px solid rgba(168,85,247,0.2)',
+            color: 'rgba(200,185,240,0.9)',
+          }}
         >
-          {[
-            { r: 'SSR', c: '#ffd700' },
-            { r: 'SR+', c: '#a855f7' },
-            { r: 'SR', c: '#3b82f6' },
-            { r: 'R', c: '#22c55e' },
-            { r: 'N', c: '#6b7280' },
-            { r: 'C', c: '#475569' },
-          ].map(({ r, c }) => (
-            <span key={r} className="flex items-center gap-1">
-              <span className="w-2 h-2 rounded-full" style={{ background: c, boxShadow: `0 0 6px ${c}` }} />
-              {r}
-            </span>
-          ))}
+          {ADVICE_MESSAGES[adviceIndex]}
         </motion.div>
       </div>
     </section>
