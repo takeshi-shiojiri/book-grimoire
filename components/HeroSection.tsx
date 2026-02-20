@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { BookOpen, Sparkles } from 'lucide-react';
+import Image from 'next/image';
+import { Sparkles } from 'lucide-react';
 import { ParticleBackground } from './ParticleBackground';
 import { CollectionProgress } from './CollectionProgress';
 
@@ -41,18 +42,15 @@ export function HeroSection({ totalCount, favoriteCount, isComplete, onOpenColle
       <ParticleBackground />
 
       <div className="relative z-10 space-y-6 max-w-2xl mx-auto">
-        {/* アイコン */}
+        {/* ロゴ */}
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, type: 'spring', bounce: 0.4 }}
-          className="inline-flex items-center justify-center w-20 h-20 rounded-2xl mx-auto"
-          style={{
-            background: 'linear-gradient(135deg, #4c1d95, #7c3aed)',
-            boxShadow: '0 0 40px rgba(168,85,247,0.5)',
-          }}
+          className="inline-flex items-center justify-center mx-auto"
+          style={{ filter: 'drop-shadow(0 0 24px rgba(168,85,247,0.6))' }}
         >
-          <BookOpen size={40} className="text-white" />
+          <Image src="/logo.svg" alt="BOOK GRIMOIRE" width={88} height={88} priority />
         </motion.div>
 
         {/* タイトル */}
@@ -82,8 +80,8 @@ export function HeroSection({ totalCount, favoriteCount, isComplete, onOpenColle
           className="text-sm max-w-md mx-auto leading-relaxed"
           style={{ color: 'var(--color-text-muted)' }}
         >
-          キャリア・思考・マインドのヒントが詰まったセレクション。
-          カードを開いて、自分だけの武器を見つけよう。
+          一生使えるキャリア・思考・マインドのヒントが詰まったブックセレクション。
+          カードを開いて自分だけの武器を見つけよう。
         </motion.p>
 
         {/* お気に入り進捗 */}
@@ -105,7 +103,7 @@ export function HeroSection({ totalCount, favoriteCount, isComplete, onOpenColle
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
-          className="mx-auto max-w-sm rounded-xl px-4 py-3 text-left space-y-1.5"
+          className="mx-auto max-w-lg rounded-xl px-5 py-4 text-left space-y-2"
           style={{
             background: 'rgba(168,85,247,0.08)',
             border: '1px solid rgba(168,85,247,0.2)',
@@ -114,7 +112,7 @@ export function HeroSection({ totalCount, favoriteCount, isComplete, onOpenColle
           <p className="text-[10px] gaming-font tracking-widest" style={{ color: 'rgba(168,85,247,0.8)' }}>
             今日のあなたへの読書TIPS
           </p>
-          <p className="text-xs leading-relaxed" style={{ color: 'rgba(200,185,240,0.9)' }}>
+          <p className="text-sm leading-relaxed" style={{ color: 'rgba(200,185,240,0.9)' }}>
             {ADVICE_MESSAGES[adviceIndex]}
           </p>
         </motion.div>
