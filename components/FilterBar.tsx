@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import {
   Briefcase, Sparkles, BookMarked,
   RotateCcw, SortAsc, SortDesc, LayoutGrid, List,
@@ -37,8 +38,26 @@ export function FilterBar({
   filter, onAttribute, onRarity, onSort, onReset, totalCount, filteredCount,
   viewMode, onViewModeChange,
 }: Props) {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
-    <div className="sticky top-0 z-30 glass border-b border-white/5 px-4 py-3 space-y-3">
+    <div
+      className="sticky top-0 z-30 border-b border-white/5 px-4 py-3 space-y-3 transition-colors duration-300"
+      style={{
+        background: scrolled
+          ? 'rgba(10, 10, 26, 0.97)'
+          : 'rgba(255, 255, 255, 0.05)',
+        backdropFilter: 'blur(16px)',
+        WebkitBackdropFilter: 'blur(16px)',
+        boxShadow: scrolled ? '0 4px 24px rgba(0,0,0,0.5)' : 'none',
+      }}
+    >
       {/* 1行目: 分類フィルタ + 表示切り替え */}
       <div className="flex items-center justify-between gap-2 flex-wrap">
         <div className="flex items-center gap-2 flex-wrap">
