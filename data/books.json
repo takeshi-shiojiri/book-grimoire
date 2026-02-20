@@ -4,9 +4,10 @@
     "title": "ワールドトリガー",
     "author": "葦原大介",
     "description": "ファシリテーション・合意形成・チーム戦術の教科書。ビジネス書としての解像度が異常に高い漫画。対立する意見の一致点と不一致点を切り分けて議論を収束させる描写など、会議設計のお手本が満載。ステークホルダーマネジメントや優先順位付けのヒントも散りばめられている。",
-    "rating": 5,
+    "rating": 6,
     "attribute": "manga",
-    "thumbnail": "https://books.google.com/books/content?id=wPfJCwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+    "thumbnail": "https://books.google.com/books/content?id=wPfJCwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api",
+    "rarity": "SR+"
   },
   {
     "id": 2,
@@ -103,9 +104,10 @@
     "title": "小さく分けて考える",
     "author": "菅原健一",
     "description": "大きな問題を扱いやすいサイズに分解する思考法。実務で即使える。「どこから手をつけていいかわからない」という状態に陥ったときの特効薬。薄くて読みやすく、明日からすぐ使える。",
-    "rating": 5,
+    "rating": 6,
     "attribute": "business",
-    "thumbnail": "https://books.google.com/books/content?id=kBWfEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+    "thumbnail": "https://books.google.com/books/content?id=kBWfEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api",
+    "rarity": "SR+"
   },
   {
     "id": 13,
@@ -265,18 +267,20 @@
     "title": "マネジメント エッセンシャル版",
     "author": "P.F.ドラッカー",
     "description": "マネジメントの体系を凝縮した一冊。「見るだけノート」で概要を掴んだ後、読書に慣れた人へ。「マネジメントとは何か」に対する原理原則が体系的にまとまっている。",
-    "rating": 5,
+    "rating": 6,
     "attribute": "business",
-    "thumbnail": "https://books.google.com/books/content?id=qOmmWkj16P0C&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+    "thumbnail": "https://books.google.com/books/content?id=qOmmWkj16P0C&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api",
+    "rarity": "SR+"
   },
   {
     "id": 31,
     "title": "7つの習慣",
     "author": "スティーブン・コヴィー",
     "description": "「主体性」「終わりを思い描く」など原則中心の生き方。自己啓発の古典にして最高峰。分厚いが人生の節目で読み返す価値がある。「緊急でないが重要なこと」に時間を使えているかを自問させられる。",
-    "rating": 5,
+    "rating": 6,
     "attribute": "selfhelp",
-    "thumbnail": "https://books.google.com/books/content?id=E3WSEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+    "thumbnail": "https://books.google.com/books/content?id=E3WSEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api",
+    "rarity": "SR+"
   },
   {
     "id": 32,
@@ -319,9 +323,10 @@
     "title": "HUNTER×HUNTER",
     "author": "冨樫義博",
     "description": "制約と誓約、リソース配分、情報戦。戦略思考の塊。群像劇としても一級品。「制約の中で最善手を打つ」というテーマがビジネスのリソース配分や戦略立案に直結する。",
-    "rating": 5,
+    "rating": 6,
     "attribute": "manga",
-    "thumbnail": "https://books.google.com/books/content?id=zgzkCwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+    "thumbnail": "https://books.google.com/books/content?id=zgzkCwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api",
+    "rarity": "SR+"
   },
   {
     "id": 37,
