@@ -38,10 +38,12 @@ export function useFilter(allBooks: Book[]) {
   }, [allBooks, filter]);
 
   function setAttribute(attr: Attribute | 'all') {
-    setFilter(f => ({ ...f, attribute: attr }));
+    // 同じタグを再押しで 'all' に戻す（トグル）
+    setFilter(f => ({ ...f, attribute: f.attribute === attr ? 'all' : attr }));
   }
   function setRarity(rarity: Rarity | 'all') {
-    setFilter(f => ({ ...f, rarity }));
+    // 同じタグを再押しで 'all' に戻す（トグル）
+    setFilter(f => ({ ...f, rarity: f.rarity === rarity ? 'all' : rarity }));
   }
   function toggleSort(key: FilterState['sortKey']) {
     setFilter(f => ({

@@ -10,6 +10,9 @@ const ADVICE_MESSAGES = [
   '💡 1冊を完璧に読もうとしなくていい。気になった章だけ読むだけで、十分に価値がある。',
   '🌱 本は読み切ることより、1つのヒントを持ち帰ることの方が大事。「刺さった一行」で十分。',
   '☕ 全部メモしようとしなくていい。読んでいる途中に「なるほど」と感じた瞬間が、すでにあなたの武器になっている。',
+  '🌙 寝る前の10分でいい。毎日読まなくていい。「また読みたい」と思える本が、あなたにとっての名著。',
+  '🔥 本は「全部理解する」ものじゃない。「これ使えそう」と思った一箇所を実践するだけで、読んだ価値がある。',
+  '🧠 内容を全部覚えようとしなくていい。「こんな本があった」と記憶の片隅に残るだけで十分。必要になったとき、あなたは必ずその本に戻ってくる。',
 ];
 
 interface Props {
@@ -102,14 +105,18 @@ export function HeroSection({ totalCount, favoriteCount, isComplete, onOpenColle
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
-          className="mx-auto max-w-sm rounded-xl px-4 py-3 text-xs text-left leading-relaxed"
+          className="mx-auto max-w-sm rounded-xl px-4 py-3 text-left space-y-1.5"
           style={{
             background: 'rgba(168,85,247,0.08)',
             border: '1px solid rgba(168,85,247,0.2)',
-            color: 'rgba(200,185,240,0.9)',
           }}
         >
-          {ADVICE_MESSAGES[adviceIndex]}
+          <p className="text-[10px] gaming-font tracking-widest" style={{ color: 'rgba(168,85,247,0.8)' }}>
+            今日のあなたへの読書TIPS
+          </p>
+          <p className="text-xs leading-relaxed" style={{ color: 'rgba(200,185,240,0.9)' }}>
+            {ADVICE_MESSAGES[adviceIndex]}
+          </p>
         </motion.div>
       </div>
     </section>
