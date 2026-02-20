@@ -1,0 +1,224 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* カラーパレット（ゲーミングダークテーマ） */
+  --color-bg-primary: #0a0a1a;
+  --color-bg-secondary: #12122a;
+  --color-bg-card: #1a1a35;
+  --color-bg-card-hover: #20203f;
+
+  /* レアリティカラー */
+  --color-rarity-ssr: #ffd700;
+  --color-rarity-srplus: #a855f7;
+  --color-rarity-sr: #3b82f6;
+  --color-rarity-r: #22c55e;
+  --color-rarity-n: #6b7280;
+  --color-rarity-c: #475569;
+
+  /* 属性カラー */
+  --color-attr-fire: #ef4444;
+  --color-attr-ice: #06b6d4;
+  --color-attr-thunder: #eab308;
+  --color-attr-dark: #8b5cf6;
+  --color-attr-light: #f59e0b;
+  --color-attr-wind: #10b981;
+
+  /* テキスト */
+  --color-text-primary: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  --color-text-accent: #c084fc;
+
+  /* フォント */
+  --font-gaming: 'Orbitron', sans-serif;
+  --font-body: 'Noto Sans JP', sans-serif;
+
+  /* アニメーション */
+  --animate-glow-pulse: glow-pulse 2s ease-in-out infinite;
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-holographic: holographic 3s linear infinite;
+  --animate-shimmer: shimmer 2s linear infinite;
+}
+
+/* ベーススタイル */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body), 'Noto Sans JP', sans-serif;
+  min-height: 100vh;
+}
+
+/* ============================================
+   カスタムアニメーション
+   ============================================ */
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(168, 85, 247, 0.9), 0 0 60px rgba(168, 85, 247, 0.4);
+  }
+}
+
+@keyframes glow-pulse-gold {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 215, 0, 1), 0 0 80px rgba(255, 215, 0, 0.5), 0 0 120px rgba(255, 215, 0, 0.2);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes holographic {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* ============================================
+   レアリティ光彩エフェクト
+   ============================================ */
+
+/* SSR: ホログラフィック */
+.card-ssr {
+  position: relative;
+  animation: glow-pulse-gold 2s ease-in-out infinite;
+}
+
+.card-ssr::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from 0deg,
+    #ff0000, #ff8800, #ffd700,
+    #00ff88, #0088ff, #8800ff,
+    #ff0088, #ff0000
+  );
+  background-size: 300% 300%;
+  animation: holographic 3s linear infinite;
+  z-index: -1;
+  filter: blur(6px);
+  opacity: 0.8;
+}
+
+/* SR+: 脈動パープル */
+.card-srplus {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* SR: ブルーシマー */
+.card-sr-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(59, 130, 246, 0.15) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+/* ============================================
+   スクロールバー
+   ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.5);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.8);
+}
+
+/* ============================================
+   ユーティリティ
+   ============================================ */
+
+.gaming-font {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #ffd700, #ff8c00, #ffd700);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: holographic 4s linear infinite;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #c084fc, #818cf8, #e879f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

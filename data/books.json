@@ -1,0 +1,371 @@
+[
+  {
+    "id": 1,
+    "title": "ワールドトリガー",
+    "author": "葦原大介",
+    "description": "ファシリテーション・合意形成・チーム戦術の教科書。ビジネス書としての解像度が異常に高い漫画。対立する意見の一致点と不一致点を切り分けて議論を収束させる描写など、会議設計のお手本が満載。ステークホルダーマネジメントや優先順位付けのヒントも散りばめられている。",
+    "rating": 5,
+    "attribute": "wind",
+    "thumbnail": "https://books.google.com/books/content?id=wPfJCwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 2,
+    "title": "論点思考",
+    "author": "内田和成",
+    "description": "「そもそも何を考えるべきか」を考える力。問いの設定を間違えるとすべてが無駄になるという原則。「解く力」より「問う力」が重要だと気づかせてくれる。仕事で「そもそもこれやる意味ある？」と立ち止まれるようになる。",
+    "rating": 5,
+    "attribute": "ice",
+    "thumbnail": "https://books.google.com/books/content?id=k33Bcw9LX98C&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 3,
+    "title": "仮説思考",
+    "author": "内田和成",
+    "description": "限られた情報から仮説を立てて検証する思考法。PdM・戦略立案に直結。情報を全部集めてから考えるのではなく、まず仮説を立ててから検証する。この順番を変えるだけで仕事のスピードと質が劇的に変わる。",
+    "rating": 5,
+    "attribute": "ice",
+    "thumbnail": "https://books.google.com/books/content?id=FTgtz2WPFYUC&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 4,
+    "title": "イシューからはじめよ",
+    "author": "安宅和人",
+    "description": "「解くべき問い」の見極めが生産性の9割を決める。知的生産の基本OS。網羅的アプローチではなく「そもそもこれは答えを出す価値のある問いか？」というフィルターを最初にかける。論点思考とセットで読むと最強。",
+    "rating": 7,
+    "attribute": "ice",
+    "thumbnail": "https://books.google.com/books/content?id=TN8YEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 5,
+    "title": "一分で話せ",
+    "author": "伊藤羊一",
+    "description": "結論→根拠→具体例のピラミッド構造。プレゼン・説明の基礎体力。「結局何が言いたいの？」と言われたことがある人に。薄くてすぐ読めるが、書いてあることを実践するのは意外と難しい。繰り返し読む価値あり。",
+    "rating": 4,
+    "attribute": "ice",
+    "thumbnail": "https://books.google.com/books/content?id=QyqpEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 6,
+    "title": "理解する技術",
+    "author": "齋藤嘉則",
+    "description": "情報を構造化して理解する方法論。インプットの質を上げたい人向け。本を読んでも頭に残らない、話を聞いても要点を拾えないという悩みがある人に。「わかったつもり」を「本当にわかる」に変える技術。",
+    "rating": 4,
+    "attribute": "ice",
+    "thumbnail": "https://books.google.com/books/content?id=MW63DwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 7,
+    "title": "シン・ロジカルシンキング",
+    "author": "深沢真太郎",
+    "description": "従来のロジカルシンキングをアップデートした実践的思考法。MECEやピラミッドストラクチャーだけじゃない、「考える」とは何かを根本から捉え直す。古典的ロジシン本に物足りなさを感じた人におすすめ。",
+    "rating": 4,
+    "attribute": "ice",
+    "thumbnail": null
+  },
+  {
+    "id": 8,
+    "title": "世界のエリートはなぜ「美意識」を鍛えるのか",
+    "author": "山口周",
+    "description": "論理だけでは差がつかない時代に、美意識・直感が意思決定の質を上げるという視点。データ分析やロジックでは差がつかなくなったとき、最後に物を言うのは「美意識」だという主張。デザイナーやPMに特に刺さる。",
+    "rating": 5,
+    "attribute": "light",
+    "thumbnail": "https://books.google.com/books/content?id=Q1pqtAEACAAJ&printsec=frontcover&img=1&zoom=3&source=gbs_api"
+  },
+  {
+    "id": 9,
+    "title": "戦略の要諦",
+    "author": "リチャード・ルメルト",
+    "description": "良い戦略と悪い戦略の違いを構造的に理解できる。経営・プロダクト戦略の古典。「診断・基本方針・行動」の3要素で整理するフレームが強力。分厚いが読む価値あり。",
+    "rating": 2,
+    "attribute": "fire",
+    "thumbnail": "https://books.google.com/books/content?id=FW1S0AEACAAJ&printsec=frontcover&img=1&zoom=3&source=gbs_api"
+  },
+  {
+    "id": 10,
+    "title": "ドラッカーのマネジメント 見るだけノート",
+    "author": "川原慎也",
+    "description": "マネジメントの基礎を視覚的に学べる入門書。初心者への最初の一冊として。原著は分厚でとっつきにくいが、これならイラストでサクッと全体像を掴める。まずこれで概要を掴んでからエッセンシャル版に進むのがおすすめ。",
+    "rating": 3,
+    "attribute": "fire",
+    "thumbnail": "https://books.google.com/books/content?id=lGsgEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 11,
+    "title": "カーネギーの人を動かすの教え 見るだけノート",
+    "author": "川口雅裕",
+    "description": "対人関係・コミュニケーションの原則を噛み砕いた入門書。原著は100年読まれ続けている古典。「議論に勝つ唯一の方法は議論を避けること」など、今もマネジメントや営業で直接使える知恵が満載。",
+    "rating": 3,
+    "attribute": "dark",
+    "thumbnail": "https://books.google.com/books/content?id=0T91EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 12,
+    "title": "小さく分けて考える",
+    "author": "菅原健一",
+    "description": "大きな問題を扱いやすいサイズに分解する思考法。実務で即使える。「どこから手をつけていいかわからない」という状態に陥ったときの特効薬。薄くて読みやすく、明日からすぐ使える。",
+    "rating": 5,
+    "attribute": "ice",
+    "thumbnail": "https://books.google.com/books/content?id=kBWfEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 13,
+    "title": "パラドックス思考",
+    "author": "舘野泰一・安斎勇樹",
+    "description": "二項対立を超えて両立させる思考法。経営判断やプロダクト設計で活きる。「品質 vs スピード」「短期 vs 長期」のような一見トレードオフに見える問題を「どちらも」で解く発想法。",
+    "rating": 3,
+    "attribute": "ice",
+    "thumbnail": "https://books.google.com/books/content?id=4kewEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 14,
+    "title": "たった1人の分析から事業は成長する 実践 顧客起点マーケティング",
+    "author": "西口一希",
+    "description": "N1分析の方法論。顧客理解の解像度を劇的に上げる。たった一人の実在の顧客を深く理解することから始める。ECやCRMの施策設計に直結する実践的なフレームワーク。",
+    "rating": 4,
+    "attribute": "thunder",
+    "thumbnail": "https://books.google.com/books/content?id=9wOQDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 15,
+    "title": "心が分かるとモノが売れる",
+    "author": "鹿毛康司",
+    "description": "消費者心理・購買行動の構造理解。EC・CRMの施策設計に直結。LINE配信やセグメント設計など「なぜこの訴求が刺さるのか」の裏付けになる。",
+    "rating": 5,
+    "attribute": "thunder",
+    "thumbnail": "https://books.google.com/books/content?id=6nsvEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 16,
+    "title": "観察力の鍛え方",
+    "author": "佐渡島庸平",
+    "description": "「見ているのに見えていない」を自覚し、観察の質を上げる。UXリサーチにも通じる。ユーザーインタビューやCS対応で「本当の問題」を見抜く力が養われる。",
+    "rating": 4,
+    "attribute": "light",
+    "thumbnail": "https://books.google.com/books/content?id=IeY_EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 17,
+    "title": "コンサル1年目が学ぶこと",
+    "author": "大石哲之",
+    "description": "ビジネス基礎スキルの網羅的入門。若手〜中堅に幅広く薦められる。議事録の取り方、ロジツリーの作り方など「知っているつもりでできていない」スキルを棚卸しできる。",
+    "rating": 4,
+    "attribute": "ice",
+    "thumbnail": "https://books.google.com/books/content?id=QWlKEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 18,
+    "title": "予想通りに不合理",
+    "author": "ダン・アリエリー",
+    "description": "行動経済学の入門書。人間の非合理な意思決定パターンを理解できる。マーケティング施策や価格設計、自分自身の判断バイアスへの気づきにもなる。読み物としても面白い。",
+    "rating": 5,
+    "attribute": "dark",
+    "thumbnail": "https://books.google.com/books/content?id=-4BNBwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 19,
+    "title": "嫌われる勇気",
+    "author": "岸見一郎・古賀史健",
+    "description": "アドラー心理学。他者の評価から自由になる思考法。マネジメントにも応用可。対話形式で読みやすく、「課題の分離」という概念はマネジメントにも直結する。",
+    "rating": 4,
+    "attribute": "light",
+    "thumbnail": "https://books.google.com/books/content?id=zN5OAgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 20,
+    "title": "解像度を上げる",
+    "author": "馬田隆明",
+    "description": "深さ・広さ・構造・時間の4視点で思考を明晰にする。起業家・PdM必読。「解像度が高い」と言われる人が何をやっているのかを構造化した本。要件定義や提案の質を上げたい人に。",
+    "rating": 5,
+    "attribute": "ice",
+    "thumbnail": "https://books.google.com/books/content?id=cWCSEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 21,
+    "title": "エッセンシャル思考",
+    "author": "グレッグ・マキューン",
+    "description": "「より少なく、しかしより良く」。優先順位と集中の原則。「やることが多すぎて回らない」と感じている人に。「何をやらないか」を決めることの重要性を徹底的に説く。リソースが限られる環境で特に刺さる。",
+    "rating": 5,
+    "attribute": "light",
+    "thumbnail": "https://books.google.com/books/content?id=70c9EQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 22,
+    "title": "具体と抽象",
+    "author": "細谷功",
+    "description": "具体と抽象の往復運動が思考力の核。すべての知的活動の基盤。薄い本だが中身は極めて濃密。他のすべての思考本の土台になる。",
+    "rating": 7,
+    "attribute": "ice",
+    "thumbnail": "https://books.google.com/books/content?id=Bmq-EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 23,
+    "title": "アナロジー思考",
+    "author": "細谷功",
+    "description": "異なる領域の構造的類似性を見抜く力。発想力と応用力の源泉。異業種の成功事例を自社に応用するときなど、ビジネスの現場で常に使う思考法。",
+    "rating": 4,
+    "attribute": "ice",
+    "thumbnail": "https://books.google.com/books/content?id=Rkcx7wmjgDwC&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 24,
+    "title": "ファスト&スロー",
+    "author": "ダニエル・カーネマン",
+    "description": "認知バイアスの体系的理解。「予想通りに不合理」の上位互換。システム1（直感）とシステム2（熟考）の使い分けを理解するだけで日常の判断の質が変わる。分厚いが最重要の一冊。",
+    "rating": 5,
+    "attribute": "dark",
+    "thumbnail": "https://books.google.com/books/content?id=yHrxYFWkrfQC&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 25,
+    "title": "影響力の武器",
+    "author": "ロバート・チャルディーニ",
+    "description": "説得・交渉・マーケティングの心理学的原則。CRM施策設計にも活きる。返報性・希少性・権威など6つの心理原則がわかると「なぜあのLINE配信は効いたのか」が論理的に説明できる。",
+    "rating": 4,
+    "attribute": "thunder",
+    "thumbnail": "https://books.google.com/books/content?id=HDeEngEACAAJ&printsec=frontcover&img=1&zoom=3&source=gbs_api"
+  },
+  {
+    "id": 26,
+    "title": "プロフェッショナルの条件",
+    "author": "P.F.ドラッカー",
+    "description": "知識労働者としての生き方・働き方の原則。「見るだけノート」の次に読む本として。「自分の強みを活かす」「成果に集中する」など、プロフェッショナルとしての原則が凝縮されている。",
+    "rating": 4,
+    "attribute": "fire",
+    "thumbnail": "https://books.google.com/books/content?id=2Y1ZEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 27,
+    "title": "失敗の科学",
+    "author": "マシュー・サイド",
+    "description": "失敗から学ぶ組織 vs 隠す組織の差。心理的安全性やチーム改善に通じる。航空業界と医療業界の対比が象徴的。「なぜ同じ失敗を繰り返すのか」を構造的に理解できる。",
+    "rating": 4,
+    "attribute": "fire",
+    "thumbnail": "https://books.google.com/books/content?id=HLsvMQAACAAJ&printsec=frontcover&img=1&zoom=3&source=gbs_api"
+  },
+  {
+    "id": 28,
+    "title": "ブルーロック",
+    "author": "金城宗幸・ノ村優介",
+    "description": "エゴと覚悟をテーマにした漫画。個の突破力とスタートアップマインドに通じる。「自分の武器は何か」を考えさせられる。競争環境でそれでも勝つために何をするか。",
+    "rating": 4,
+    "attribute": "wind",
+    "thumbnail": "https://books.google.com/books/content?id=BpaUEQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 29,
+    "title": "キングダム",
+    "author": "原泰久",
+    "description": "組織づくり・リーダーシップ・戦略を戦国の文脈で描く漫画。経営者に人気の理由がわかる。人を動かす言葉、組織の士気、異なるタイプのリーダー像が学びになる。",
+    "rating": 4,
+    "attribute": "wind",
+    "thumbnail": "https://books.google.com/books/content?id=bCXKCwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 30,
+    "title": "マネジメント エッセンシャル版",
+    "author": "P.F.ドラッカー",
+    "description": "マネジメントの体系を凝縮した一冊。「見るだけノート」で概要を掴んだ後、読書に慣れた人へ。「マネジメントとは何か」に対する原理原則が体系的にまとまっている。",
+    "rating": 5,
+    "attribute": "fire",
+    "thumbnail": "https://books.google.com/books/content?id=qOmmWkj16P0C&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 31,
+    "title": "7つの習慣",
+    "author": "スティーブン・コヴィー",
+    "description": "「主体性」「終わりを思い描く」など原則中心の生き方。自己啓発の古典にして最高峰。分厚いが人生の節目で読み返す価値がある。「緊急でないが重要なこと」に時間を使えているかを自問させられる。",
+    "rating": 5,
+    "attribute": "light",
+    "thumbnail": "https://books.google.com/books/content?id=E3WSEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 32,
+    "title": "THINK AGAIN",
+    "author": "アダム・グラント",
+    "description": "自分の前提を疑い「考え直す力」を鍛える。アンラーニングの重要性。経験を積むほど「自分の考えに固執する」罠に陥りがち。それを自覚し、柔軟に考え直す技術を学べる。",
+    "rating": 4,
+    "attribute": "light",
+    "thumbnail": "https://books.google.com/books/content?id=0N33zgEACAAJ&printsec=frontcover&img=1&zoom=3&source=gbs_api"
+  },
+  {
+    "id": 33,
+    "title": "限りある時間の使い方",
+    "author": "オリバー・バークマン",
+    "description": "「全部はできない」を受け入れた上での時間との向き合い方。エッセンシャル思考と好相性。生産性ハックではなく「そもそも時間は足りないもの」という前提から出発する。",
+    "rating": 4,
+    "attribute": "light",
+    "thumbnail": "https://books.google.com/books/content?id=cgx0EAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 34,
+    "title": "反応しない練習",
+    "author": "草薙龍瞬",
+    "description": "仏教的アプローチで「無駄な反応」を手放す。感情に振り回されない判断力の基盤。Slackやメールでイラっとしたときに「その反応は必要か？」と一呼吸置けるようになる。",
+    "rating": 4,
+    "attribute": "dark",
+    "thumbnail": "https://books.google.com/books/content?id=AAY9CgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 35,
+    "title": "宇宙兄弟",
+    "author": "小山宙哉",
+    "description": "挫折からの再起、チームビルディング、リーダーシップの多様性。「諦めない」の解像度が高い。「自分には才能がない」と感じたときに読むと勇気が出る。多様なリーダー像が描かれる。",
+    "rating": 5,
+    "attribute": "wind",
+    "thumbnail": "https://books.google.com/books/content?id=buTCBQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 36,
+    "title": "HUNTER×HUNTER",
+    "author": "冨樫義博",
+    "description": "制約と誓約、リソース配分、情報戦。戦略思考の塊。群像劇としても一級品。「制約の中で最善手を打つ」というテーマがビジネスのリソース配分や戦略立案に直結する。",
+    "rating": 5,
+    "attribute": "wind",
+    "thumbnail": "https://books.google.com/books/content?id=zgzkCwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 37,
+    "title": "左利きのエレン",
+    "author": "かっぴー・nifuni",
+    "description": "才能と凡人の葛藤、クリエイティブ業界のリアル。「自分の武器は何か」を突きつけられる。「天才じゃない側」の戦い方が描かれており、実力で勝負するビジネスパーソンに刺さる。",
+    "rating": 4,
+    "attribute": "wind",
+    "thumbnail": "https://books.google.com/books/content?id=NjuMEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 38,
+    "title": "インベスターZ",
+    "author": "三田紀房",
+    "description": "投資・経済・起業をテーマにした漫画。ビジネスリテラシーの入門として読みやすい。お金の仕組み、会社の成り立ち、起業家精神などを漫画で学べる。",
+    "rating": 4,
+    "attribute": "wind",
+    "thumbnail": "https://books.google.com/books/content?id=tFRNDAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 39,
+    "title": "ドラゴン桜",
+    "author": "三田紀房",
+    "description": "学び方・思考法・戦略的アプローチの教科書。「勉強」の構造を分解する視点。「根性ではなく戦略で勝つ」というメッセージが、仕事の進め方にもそのまま応用できる。",
+    "rating": 4,
+    "attribute": "wind",
+    "thumbnail": "https://books.google.com/books/content?id=b4NlDwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 40,
+    "title": "トリリオンゲーム",
+    "author": "稲垣理一郎・池上遥一",
+    "description": "スタートアップのリアルを描いた漫画。ハッタリと実行力で世界を切り拓く姿が痛快。「とりあえずやってみる」「巨大なビジョンを掲げて人を巻き込む」という起業家マインドの教科書。",
+    "rating": 4,
+    "attribute": "wind",
+    "thumbnail": "https://books.google.com/books/content?id=tpV2zgEACAAJ&printsec=frontcover&img=1&zoom=3&source=gbs_api"
+  },
+  {
+    "id": 41,
+    "title": "エンゼルバンク",
+    "author": "三田紀房",
+    "description": "転職・キャリア・働くことの本質をテーマにした漫画。ドラゴン桜のスピンオフ作品。「自分の市場価値」「会社と個人の関係」を考えるきっかけになる。キャリアに悩んだときに読みたい。",
+    "rating": 4,
+    "attribute": "wind",
+    "thumbnail": "https://books.google.com/books/content?id=Wsi_BQAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api"
+  }
+]

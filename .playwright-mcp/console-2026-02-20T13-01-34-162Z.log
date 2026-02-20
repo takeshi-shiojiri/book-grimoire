@@ -1,0 +1,2 @@
+[    9445ms] [WARNING] Image with src "https://books.google.com/books/content?id=wPfJCwAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&source=gbs_api" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3005/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
