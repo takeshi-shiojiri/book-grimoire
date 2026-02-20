@@ -18,7 +18,7 @@ export function CollectionProgress({ favoriteCount, total, isComplete, onOpen }:
       {/* クリッカブルなヘッダー行 */}
       <button
         onClick={onOpen}
-        className="w-full flex items-center justify-between mb-1.5 group rounded-lg px-1 py-0.5 transition-colors hover:bg-white/5"
+        className="w-full flex items-center justify-between mb-1.5 group rounded-lg px-1 py-2 transition-colors hover:bg-white/5"
         aria-label="お気に入りコレクションを開く"
       >
         <span className="inline-flex items-center gap-1.5 text-xs gaming-font text-pink-400">
