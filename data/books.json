@@ -69,7 +69,7 @@
     "description": "論理だけでは差がつかない時代に、美意識・直感が意思決定の質を上げるという視点。データ分析やロジックでは差がつかなくなったとき、最後に物を言うのは「美意識」だという主張。デザイナーやPMに特に刺さる。",
     "rating": 5,
     "attribute": "selfhelp",
-    "thumbnail": "https://books.google.com/books/content?id=Q1pqtAEACAAJ&printsec=frontcover&img=1&zoom=3&source=gbs_api"
+    "thumbnail": "/images/book-8.jpg"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "description": "良い戦略と悪い戦略の違いを構造的に理解できる。経営・プロダクト戦略の古典。「診断・基本方針・行動」の3要素で整理するフレームが強力。分厚いが読む価値あり。",
     "rating": 2,
     "attribute": "business",
-    "thumbnail": "https://books.google.com/books/content?id=FW1S0AEACAAJ&printsec=frontcover&img=1&zoom=3&source=gbs_api"
+    "thumbnail": "/images/book-9.jpg"
   },
   {
     "id": 10,
@@ -222,7 +222,7 @@
     "description": "説得・交渉・マーケティングの心理学的原則。CRM施策設計にも活きる。返報性・希少性・権威など6つの心理原則がわかると「なぜあのLINE配信は効いたのか」が論理的に説明できる。",
     "rating": 4,
     "attribute": "selfhelp",
-    "thumbnail": "https://books.google.com/books/content?id=HDeEngEACAAJ&printsec=frontcover&img=1&zoom=3&source=gbs_api"
+    "thumbnail": "/images/book-25.jpg"
   },
   {
     "id": 26,
@@ -240,7 +240,7 @@
     "description": "失敗から学ぶ組織 vs 隠す組織の差。心理的安全性やチーム改善に通じる。航空業界と医療業界の対比が象徴的。「なぜ同じ失敗を繰り返すのか」を構造的に理解できる。",
     "rating": 4,
     "attribute": "business",
-    "thumbnail": "https://books.google.com/books/content?id=HLsvMQAACAAJ&printsec=frontcover&img=1&zoom=3&source=gbs_api"
+    "thumbnail": "/images/book-27.jpg"
   },
   {
     "id": 28,
@@ -285,7 +285,7 @@
     "description": "自分の前提を疑い「考え直す力」を鍛える。アンラーニングの重要性。経験を積むほど「自分の考えに固執する」罠に陥りがち。それを自覚し、柔軟に考え直す技術を学べる。",
     "rating": 4,
     "attribute": "selfhelp",
-    "thumbnail": "https://books.google.com/books/content?id=0N33zgEACAAJ&printsec=frontcover&img=1&zoom=3&source=gbs_api"
+    "thumbnail": "/images/book-32.jpg"
   },
   {
     "id": 33,
@@ -357,7 +357,7 @@
     "description": "スタートアップのリアルを描いた漫画。ハッタリと実行力で世界を切り拓く姿が痛快。「とりあえずやってみる」「巨大なビジョンを掲げて人を巻き込む」という起業家マインドの教科書。",
     "rating": 4,
     "attribute": "manga",
-    "thumbnail": "https://books.google.com/books/content?id=tpV2zgEACAAJ&printsec=frontcover&img=1&zoom=3&source=gbs_api"
+    "thumbnail": "/images/book-40.jpg"
   },
   {
     "id": 41,
